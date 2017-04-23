@@ -1,0 +1,7 @@
+node_modules
+public/lib
+public/data
+public/index.html
+
+.DS_Store
+

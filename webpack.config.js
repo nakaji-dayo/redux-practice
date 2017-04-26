@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
 
 module.exports = {
   devServer: {
@@ -33,6 +34,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.html',
+    }),
+    new FlowStatusWebpackPlugin({
+      failOnError: true
     }),
   ],
   devtool: 'source-map'

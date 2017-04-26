@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 const App = ({ children }) => (
   <div>
-    <div class="content-wrapper">
+    <div className="content-wrapper">
       {children}
     </div>
   </div>
